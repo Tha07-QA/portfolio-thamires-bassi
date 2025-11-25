@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Site_Thamires</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- Body do site (cole no painel HTML do CodePen) -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="brand">Thamires <span class="dot">B.</span></a>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="nav-toggle">☰</button>
+    <nav id="nav-list" class="main-nav" role="navigation" aria-hidden="true">
+      <ul>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#education">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <img src="https://via.placeholder.com/160x160.png?text=TB" alt="Foto Thamires" class="avatar" />
+        <div>
+          <h1>Thamires Bassi</h1>
+          <p class="lead">Analista de Teste / QA · Especialista em Xray · Experiência com Salesforce</p>
+          <p class="cta-row">
+            <a class="btn" href="#portfolio">Ver projetos</a>
+            <a class="btn ghost" href="#contact">Entrar em contato</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Sobre</h2>
+      <div class="grid about-grid">
+        <div class="card">
+          <h3>Quem sou</h3>
+          <p>Sou Analista de Teste com experiência em planejamento de casos, execução em ambientes UAT e uso de Xray/Jira. Trabalho com times ágeis para garantir qualidade desde o planejamento até a entrega.</p>
+        </div>
+        <div class="card">
+          <h3>Habilidades</h3>
+          <ul class="skills">
+            <li>Testes funcionais & exploratórios</li>
+            <li>Planejamento no Xray</li>
+            <li>Scripts simples em Python/JS</li>
+            <li>Metodologias ágeis (Scrum)</li>
+            <li>Comunicação com produto e dev</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section soft">
+    <div class="container">
+      <h2>Formação</h2>
+      <div class="card-list">
+        <article class="card">
+          <h3>Graduação em Análise e Desenvolvimento</h3>
+          <p>Universidade — Conclusão: 20XX</p>
+        </article>
+        <article class="card">
+          <h3>Cursos e Certificados</h3>
+          <ul>
+            <li>Testes de Software (Xray / Jira)</li>
+            <li>Metodologias Ágeis</li>
+            <li>QA em Salesforce</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfólio</h2>
+      <p class="muted">Projetos de destaque que demonstram planejamento de testes e automação.</p>
+      <div class="grid projects-grid">
+        <article class="project">
+          <h4>CG Offline — Testes Salesforce</h4>
+          <p>Planejamento, execução no UAT e registro no Xray. Relatórios e análise de regressão.</p>
+          <p class="tag">Xray · Salesforce</p>
+        </article>
+
+        <article class="project">
+          <h4>CLI Estoque</h4>
+          <p>Protótipo em Python para entrada/saída com validações e persistência simples.</p>
+          <p class="tag">Python · CLI</p>
+        </article>
+
+        <article class="project">
+          <h4>Automação de Regressão</h4>
+          <p>Scripts de automação integrados ao pipeline de CI para reduzir retrabalho manual.</p>
+          <p class="tag">Automação · CI</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section soft">
+    <div class="container">
+      <h2>Contato</h2>
+      <div class="grid contact-grid">
+        <div class="card">
+          <h3>Fale comigo</h3>
+          <p>Email: <a href="mailto:thamiresbassipinto@gmail.com">thamiresbassipinto@gmail.com</a></p>
+          <p>LinkedIn: <a href="#" target="_blank" rel="noopener">linkedin.com/in/thamires</a></p>
+        </div>
+
+        <form id="contactForm" class="card form-card" novalidate>
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Enviar mensagem</button>
+            <button class="btn ghost" type="reset">Limpar</button>
+          </div>
+
+          <div id="formFeedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Thamires Bassi — Analista de Teste</p>
+    </div>
+  </footer>
+</main>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
